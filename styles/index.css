@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #b5b5b5;
+  .container {
+    .nav {
+      .group {
+        display: flex;
+        line-height: 28px;
+        align-items: center;
+        position: relative;
+        max-width: 190px;
+      }
+
+      .input {
+        width: 372px;
+        height: 40px;
+        line-height: 28px;
+        padding: 0 1rem;
+        padding-left: 2.5rem;
+        border: 2px solid transparent;
+        border-radius: 8px;
+        outline: none;
+        background-color: #f3f3f4;
+        color: #0d0c22;
+        transition: 0.3s ease;
+      }
+
+      .input::placeholder {
+        color: #9e9ea7;
+      }
+
+      .input:focus,
+      input:hover {
+        outline: none;
+        border-color: rgba(234, 76, 137, 0.4);
+        background-color: #fff;
+        box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+      }
+
+      .icon {
+        position: absolute;
+        left: 1rem;
+        fill: #9e9ea7;
+        width: 1rem;
+        height: 1rem;
+      }
+      .sections {
+        #home {
+          color: black;
+        }
+        a {
+          font-weight: 500;
+          text-decoration: none;
+          color: #0000004f;
+        }
+      }
+      .menu {
+        cursor: pointer;
+      }
+    }
+  }
+}
+.content {
+  .container {
+    .products {
+      .leftSection {
+        .dropdown {
+          button {
+            background-color: #fff;
+            border-radius: 0;
+            border-bottom: 0.5px solid #b5b5b5;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+          }
+          ul {
+            #applyButton {
+              color: white;
+              width: 90%;
+              border-radius: 8px;
+              margin-top: 10px;
+              margin-left: 20px;
+            }
+            .search {
+              .group {
+                display: flex;
+                line-height: 28px;
+                align-items: center;
+                position: relative;
+                max-width: 190px;
+              }
+
+              .input {
+                width: 372px;
+                height: 40px;
+                line-height: 28px;
+                padding: 0 1rem;
+                padding-left: 2.5rem;
+                border: 2px solid transparent;
+                border-radius: 8px;
+                outline: none;
+                background-color: #f3f3f4;
+                color: #0d0c22;
+                transition: 0.3s ease;
+              }
+
+              .input::placeholder {
+                color: #9e9ea7;
+              }
+
+              .input:focus,
+              input:hover {
+                outline: none;
+                border-color: rgba(234, 76, 137, 0.4);
+                background-color: #fff;
+                box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+              }
+
+              .icon {
+                position: absolute;
+                left: 1rem;
+                fill: #9e9ea7;
+                width: 1rem;
+                height: 1rem;
+              }
+            }
+            .check {
+              margin-left: 20px;
+            }
+            .form-check-input:checked {
+              background-color: black;
+              border-color: black;
+              box-shadow: none;
+            }
+            .form-check-input {
+              box-shadow: none;
+            }
+          }
+        }
+      }
+      .rightSection {
+        .cards {
+          .card {
+            border-color: white;
+            border-radius: 0;
+            padding: 10px;
+            .content {
+              background-color: #f6f6f6;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              padding-top: 24px;
+              padding-left: 16px;
+              padding-right: 16px;
+              border-radius: 9px;
+              img {
+                width: 234px;
+                max-width: 100%;
+                height: 160px;
+                border-radius: 6px;
+                border-width: 1px;
+              }
+              .card-body {
+                .btn {
+                  width: 100%;
+                  background-color: black;
+                  color: white;
+                }
+                @media screen and (max-width: 767px) {
+                  p {
+                    font-size: 14px;
+                    margin-left: 20px;
+                  }
+                  .btn {
+                    width: 100%;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .pagesBar {
+          #page1 {
+            background-color: black;
+            color: white;
+          }
+          button {
+            background-color: #f6f6f6;
+            width: 32px;
+            height: 32px;
+            border: 0;
+            border-radius: 5px;
+          }
+          span {
+            color: #737373;
+            font-size: 29px;
+          }
+          svg {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+footer {
+  background: black;
+  .container {
+    .leftPart {
+      .firstPart {
+        img {
+          width: 65px;
+          height: 22px;
+        }
+        p {
+          color: #cfcfcf;
+          font-weight: 500;
+          font-style: Medium;
+          font-size: 14px;
+          line-height: 171%;
+          letter-spacing: 0%;
+        }
+        @media screen and (max-width : 767px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      }
+      .secondPart{
+        svg{
+          color: white;
+          cursor: pointer;
+        }
+        @media screen and (max-width : 767px) {
+        display: flex;  
+        justify-content: center;
+        align-items: center;
+      }
+      }
+    }
+    .midle{
+      gap: 10px;
+      p{
+        color: white;
+        font-weight: 600;
+        font-style: SemiBold;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: 0%;
+      }
+      a{
+        text-decoration: none;
+        color:#CFCFCF;
+        &:hover{
+          color: white;
+        }
+      }
+      @media screen and (max-width : 767px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  @media screen and (max-width : 767px) {
+    margin-top: 450px;
+  }
+}
